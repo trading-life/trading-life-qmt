@@ -60,8 +60,7 @@ def on_opennn(ContextInfo):
 
 def init(ContextInfo):
 	print("hello")
-	ws = wsc.WebSocketApp("ws://127.0.0.1:10008/ws/message", on_message=on_message, on_error=on_error,on_close=on_close,on_open=on_open,header={"CustomHeader1":"ÄãºÃ", "NewHeader2":"Test"})
+	ws = wsc.WebSocketApp("ws://127.0.0.1:10008/ws/message", on_message=on_message, on_error=on_error,
+						  on_close=on_close, on_open=on_open, header={"CustomHeader1": "ÄãºÃ", "NewHeader2": "Test"})
 	ws.run_forever()
 	print("hwllo")
-
-
